@@ -1,0 +1,28 @@
+<div nz-row style="margin-top: 50px">
+  <div nz-col nzSpan="1"></div>
+  <div nz-col nzSpan="22">
+    <input nz-input placeholder="根据用户名搜索" [(ngModel)]="searchKey"/>
+    <nz-table #basicTable
+              [nzData]="users"
+    >
+      <thead>
+      <tr>
+        <th>用户名</th>
+        <th>邮箱</th>
+        <th>角色</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td *ngIf="data.username.includes(searchKey)">{{ data.username }}</td>
+        <td *ngIf="data.username.includes(searchKey)">{{ data.email }}</td>
+        <td *ngIf="data.username.includes(searchKey)">{{ data.role }}</td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </div>
+  <div nz-col nzSpan="1"></div>
+</div>
+
+
+

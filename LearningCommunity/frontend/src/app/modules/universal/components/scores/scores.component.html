@@ -1,0 +1,40 @@
+<div nz-row>
+  <div nz-col [nzLg]="1" [nzXs]="1"></div>
+  <div nz-col [nzLg]="22" [nzXs]="22">
+
+    <nz-table
+      [nzData]="scores"
+      [nzFrontPagination]="false"
+    >
+      <thead>
+      <tr>
+        <th>姓名</th>
+        <th>试题得分（得分/总分）</th>
+        <th>作业提交（已提交/总数）</th>
+        <th>评分</th>
+        <th *ngIf="isTeacher">评分操作</th>
+        <th *ngIf="isTeacher">操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let score of scores;let i=index">
+        <td>{{score.username}}({{score.realname}})</td>
+        <td>{{score.gottenPoint}} / {{score.maxPoint}}</td>
+        <td>{{score.finishedHomeworkCnt}} / {{score.totalHomeworkCnt}}</td>
+
+        <td *ngIf="score.score">{{score.score}}</td>
+        <td *ngIf="!score.score">未评分</td>
+
+        <td *ngIf="isTeacher">
+          <nz-input-number [(ngModel)]="teacherGrade[i]" [nzMin]="0" [nzMax]="100"
+                           [nzStep]="10"></nz-input-number>
+        </td>
+        <td *ngIf="isTeacher">
+          <button nz-button nzType="primary" style="float:right" (click)="submit(i)">提交</button>
+        </td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</div>
+

@@ -1,0 +1,28 @@
+<div nz-row>
+  <div nz-col nzSpan="4"></div>
+  <div nz-col nzSpan="16">
+    <nz-list nzBordered style="background-color: white">
+
+      <nz-list-item *ngFor="let member of courseMembers;let i=index">
+
+        <span style="float: left">
+           <nz-avatar nzSize="default" [nzSrc]="avatars[i]"></nz-avatar>
+          {{member.username}} ({{member.realname}})
+        </span>
+
+        <span style="text-align: right">
+          {{member.email}}
+          <nz-tag [nzColor]="'blue'">{{member.role}}</nz-tag>
+
+          <button *ngIf="isTeacher" nz-button nzType="text" nzDanger
+                  (click)="removeCourseStudentTA(member.username)">╳</button>
+        </span>
+
+      </nz-list-item>
+
+    </nz-list>
+  </div>
+  <div nz-col nzSpan="4"></div>
+</div>
+
+

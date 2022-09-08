@@ -1,0 +1,37 @@
+<nz-tabset nzCentered style="">
+  <nz-tab nzTitle="我的作业">
+    <div nz-row>
+      <div nz-col [nzLg]="1" [nzXs]="1"></div>
+      <div nz-col [nzLg]="22" [nzXs]="22">
+
+        <nz-table
+          [nzData]="myHomework"
+          [nzFrontPagination]="false"
+        >
+          <thead>
+          <tr>
+            <th>作业名</th>
+            <th>课程名</th>
+            <th>是否提交</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let homework of myHomework;let i=index">
+            <td>{{homework.title}}</td>
+            <td>{{homework.courseName}}</td>
+            <td>
+              <nz-tag [nzColor]="'blue'" *ngIf="homework.finished">已提交</nz-tag>
+              <nz-tag [nzColor]="'red'" *ngIf="!homework.finished">未提交</nz-tag>
+            </td>
+            <td>
+              <a nz-button nzType="link" (click)="jumpToViewEditHomework(homework.homeworkID)">查看</a>
+            </td>
+          </tr>
+          </tbody>
+        </nz-table>
+      </div>
+    </div>
+  </nz-tab>
+</nz-tabset>
+

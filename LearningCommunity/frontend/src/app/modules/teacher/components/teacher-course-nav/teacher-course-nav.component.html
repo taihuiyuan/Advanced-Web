@@ -1,0 +1,77 @@
+<app-course-header [courseCode]="courseCode"></app-course-header>
+
+<div class="card-container">
+  <nz-tabset nzCentered nzType="card">
+
+    <nz-tab nzTitle="成员列表">
+      <ng-template nz-tab>
+        <app-course-member-view [courseCode]="courseCode" [isTeacher]="true"></app-course-member-view>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab nzTitle="课程章节">
+      <ng-template nz-tab>
+        <app-chapter [courseCode]="courseCode" [isStudent]="false"></app-chapter>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab nzTitle="添加章节">
+      <ng-template nz-tab>
+        <app-add-chapter [courseCode]="courseCode"></app-add-chapter>
+        <app-add-section [courseCode]="courseCode"
+                         [chapterLastUpdated]="chapterLastUpdated"></app-add-section>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab nzTitle="添加助教" (nzClick)="inviteTA()">
+    </nz-tab>
+
+    <nz-tab nzTitle="课程设置">
+      <ng-template nz-tab>
+        <app-course-config [courseCode]="courseCode"></app-course-config>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab nzTitle="教师出题">
+      <ng-template nz-tab>
+        <app-add-problem [courseCode]="courseCode" [title]="'教师出题'" [isStudent]="false"></app-add-problem>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab nzTitle="试题分发" (nzClick)="problemHandoutComponent?.reload()">
+      <ng-template nz-tab>
+        <app-problem-handout [courseCode]="courseCode"></app-problem-handout>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab [nzTitle]="problemsToBeTeacherGrade">
+      <ng-template #problemsToBeTeacherGrade>
+        试题评价
+        <nz-badge [nzDot]="teacherGradeProblemComponent?.hasProblemToBeGraded()">
+        </nz-badge>
+      </ng-template>
+        <app-teacher-grade-problem [courseCode]="courseCode"></app-teacher-grade-problem>
+
+    </nz-tab>
+
+    <nz-tab nzTitle="文件">
+      <ng-template nz-tab>
+        <app-course-file [allowFileUpload]="true" [courseCode]="courseCode"></app-course-file>
+      </ng-template>
+    </nz-tab>
+
+    <nz-tab nzTitle="课程评分">
+      <ng-template nz-tab>
+        <app-scores [courseCode]="courseCode" [isTeacher]="true"></app-scores>
+      </ng-template>
+    </nz-tab>
+
+
+  </nz-tabset>
+</div>
+
+
+
+
+
+
