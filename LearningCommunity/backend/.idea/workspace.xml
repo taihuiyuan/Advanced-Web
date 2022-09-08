@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5131fb5f-522f-4e68-ba20-3d0b03c8687c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="27skDovRql1idwZb0l6irXly6qR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.LearningCommunityBackApplicationTests.sort">
+    <configuration name="LearningCommunityBackApplicationTests.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LearningCommunityBack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.adweb.learningcommunityback.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.adweb.learningcommunityback" />
+      <option name="MAIN_CLASS_NAME" value="org.adweb.learningcommunityback.LearningCommunityBackApplicationTests" />
+      <option name="METHOD_NAME" value="sort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearningCommunityBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="LearningCommunityBack" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.adweb.learningcommunityback.LearningCommunityBackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LearningCommunityBackApplicationTests.sort" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5131fb5f-522f-4e68-ba20-3d0b03c8687c" name="Changes" comment="" />
+      <created>1650116080311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650116080311</updated>
+      <workItem from="1650116106124" duration="1894000" />
+      <workItem from="1650118234344" duration="5894000" />
+      <workItem from="1650166192936" duration="3460000" />
+      <workItem from="1650711367128" duration="4000" />
+      <workItem from="1650711416060" duration="17368000" />
+      <workItem from="1650804576144" duration="1958000" />
+      <workItem from="1650973102288" duration="344000" />
+      <workItem from="1651647434854" duration="9647000" />
+      <workItem from="1651667318324" duration="12000" />
+      <workItem from="1651936124040" duration="854000" />
+      <workItem from="1652871684526" duration="7390000" />
+      <workItem from="1652939684236" duration="873000" />
+      <workItem from="1654074276185" duration="3928000" />
+      <workItem from="1654078845966" duration="1555000" />
+      <workItem from="1654159138386" duration="194000" />
+      <workItem from="1654173244180" duration="395000" />
+      <workItem from="1654490893664" duration="303000" />
+      <workItem from="1654692582758" duration="513000" />
+      <workItem from="1654695415547" duration="2839000" />
+      <workItem from="1654775520768" duration="9237000" />
+      <workItem from="1654928694602" duration="1018000" />
+      <workItem from="1655026741410" duration="10000" />
+      <workItem from="1655261098033" duration="5869000" />
+      <workItem from="1655346381487" duration="422000" />
+      <workItem from="1655360679580" duration="827000" />
+      <workItem from="1655805439797" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

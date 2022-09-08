@@ -1,0 +1,14 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 256MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/learning_community
+      auto-index-creation: true
